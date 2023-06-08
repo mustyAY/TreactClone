@@ -86,6 +86,7 @@ img {
   height: 100%;
 }
 
+
 /*
 
 NAVIGATOR
@@ -427,11 +428,10 @@ STEPS
 
 .steps__img--wrapper{
   width: 50%;
-  position: relative;
 }
 
 .steps__img--container{
-  margin-top: 88px; 
+  margin-top: 88px;
 }
 
 .steps__description{
@@ -477,15 +477,82 @@ STEPS
   color: rgb(113, 128, 150);
 }
 
-.svg__steps{
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  left: 37.75%;
-  transform: translateY(-55%);
-  opacity: 0.15;
-  z-index: -1;
+
+/*
+
+VALUES
+
+*/
+
+.values__row{
+  display: flex;
 }
 
+.values__description{
+  width: 50%;
+  padding-right: 64px;
+}
+
+.values__para{
+  margin-top: 32px;
+}
+
+.values__wrapper{
+  margin-top: 32px;
+  display: flex;
+}
+
+.value{
+  margin-right: 24px;
+}
+
+.values__illustration--wrapper{
+  width: 50%;
+}
+
+.value__title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.value__img--wrapper,
+.value__img--wrapper-ii{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.value__img--wrapper{
+  background-color: rgb(154, 230, 180);
+}
+
+.value__img--wrapper-ii{
+  background-color: rgb(254, 178, 178);
+}
+
+.value__img{
+  width: 20px;
+  height: 20px;
+  color: rgb(39 103 73);
+}
+
+.value__img--ii{
+  color: rgb(155 44 44);
+}
+
+.value__name{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-left: 12px;
+}
+
+.value__para{
+  font-size: 16px;
+  color: rgb(113, 128, 150);
+  line-height: 1.85;
+}
 
 
