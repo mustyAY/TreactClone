@@ -349,6 +349,7 @@ header {
   border: 2px solid rgb(226, 232, 240);
   border-radius: 9999px;
   padding-left: 32px;
+  padding-right: 16px;
   font-weight: 500;
   font-size: 16px;
   color: rgba(36, 62, 99);
@@ -380,6 +381,7 @@ header {
 
 .header__img--wrapper {
   width: 60%;
+  z-index: 1;
 }
 
 .svg__landing {
@@ -501,7 +503,7 @@ QUALITY WORK
   width: 100%;
 }
 
-.qualitywork__subtitle{
+.qualitywork__para{
   margin-bottom: 32px;
 }
 
@@ -1174,8 +1176,19 @@ footer{
   }
 
   .header__para{
-    font-size: 16px;
     margin: 20px 0;
+  }
+
+  .feature{
+    width: 50%;
+  }
+
+  .qualitywork__subtitle{
+    font-size: 30px;
+  }
+
+  .qualitywork__para{
+    font-size: 16px;
   }
 
 }
@@ -1188,6 +1201,25 @@ footer{
 
   .header__img--wrapper{
     width: 70%;
+  }
+
+  .qualitywork__row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .qualitywork__title{
+    margin-top: 64px;
+  }
+   
+  .qualitywork__img--wrapper{
+    width: 65%;
+  }
+
+  .qualitywork__description{
+    width: 70%;
+    text-align: center;
+    padding: 0;
   }
 }
 
@@ -1205,11 +1237,95 @@ footer{
   .trusted__customers--title{
     margin-top: 100px;
   }
+
+  .feature{
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px){
   .header__img--wrapper{
     width: 80%;
   }
+
+  .qualitywork__img--wrapper{
+    width: 80%;
+  }
+
+  .qualitywork__description{
+    width: 85%;
+  }
 }
 
+@media (max-width: 528px){
+
+  .features__subtitle{
+    font-size: 30px;
+  }
+
+  .features__para{
+    font-size: 16px;
+  }
+
+  .header__description{
+    width: 100%;
+  }
+
+  .header__img--wrapper{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 456px){
+  .qualitywork__img--wrapper{
+    width: 95%;
+  }
+
+  .qualitywork__description{
+    width: 95%;
+  }
+}
+
+@media (max-width: 410px) {
+  
+  .trusted__customers--img{
+    margin-bottom: 16px;
+  }
+  .header__img--wrapper{
+    padding: 0;
+  }
+}
+
+@media (max-width: 388px){
+  .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature__img--container{
+    max-width: 66px;
+  }
+
+  .feature__img--wrapper{
+    margin: 0;
+  }
+
+  .feature__title{
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .feature__para{
+    text-align: center;
+  }
+
+  .qualitywork__img--wrapper{
+    width: 100%;
+  }
+
+  .qualitywork__description{
+    width: 100%;
+  }
+}
