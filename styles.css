@@ -608,7 +608,6 @@ VALUES
 
 .values__row{
   display: flex;
-  flex-wrap: wrap-reverse;
 }
 
 .values__description{
@@ -624,11 +623,19 @@ VALUES
   margin-top: 32px;
   margin-bottom: 48px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
+.value__i{
+  padding: 8px;
+}
+
+.value__ii{
+  padding: 4px;
+}
+
 .value{
-  margin-right: 24px;
   width: 50%;
 }
 
@@ -688,6 +695,10 @@ PRICING
 
 */
 
+#pricing{
+  position: relative;
+}
+
 .pricing__title,
 .pricing__subtitle,
 .pricing__para{
@@ -729,7 +740,8 @@ PRICING
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
 }
 
-.price__i{
+.price__i,
+.price__iii{
   background-color: rgb(255, 255, 255);
 }
 
@@ -1209,6 +1221,11 @@ footer{
     margin-bottom: 16px;
   }
 
+  .value__i,
+  .value__ii{
+    padding: 0;
+  }
+
 }
 
 @media (max-width: 796px){
@@ -1318,7 +1335,6 @@ footer{
 
   .btn{
     width: 100%;
-    left: 0;
     right: 0;
     transform: translateY(110%);
   }
@@ -1329,6 +1345,10 @@ footer{
 
   .feature{
     width: 100%;
+  }
+
+  .pricing__subtitle{
+    font-size: 36px;
   }
 }
 
@@ -1466,5 +1486,22 @@ footer{
 
   .values__description{
     width: 100%;
+  }
+
+  .price__title,
+  .price__features--title{
+    font-size: 16px;
+  }
+
+  .price__amount{
+    font-size: 30px;
+  }
+
+  .price__duration{
+    font-size: 14px;
+  }
+
+  .buy__now{
+    padding: 16px 32px;
   }
 }
