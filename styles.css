@@ -624,6 +624,7 @@ VALUES
   margin-top: 32px;
   margin-bottom: 48px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .value{
@@ -1194,6 +1195,20 @@ footer{
   .steps__subtitle{
     font-size: 30px;
   }
+
+  .values__subtitle{
+    font-size: 30px;
+  }
+
+  .values__para{
+    font-size: 16px;
+  }
+
+  .value{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
 }
 
 @media (max-width: 796px){
@@ -1264,6 +1279,35 @@ footer{
     text-align: center;
     margin: 0;
   }
+
+  .values__row{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .values__illustration--wrapper{
+    width: 70%;
+  }
+
+  .values__description{
+    width: 70%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .values__title{
+    margin-top: 64px;
+  }
+
+  .value__title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .value{
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 694px){
@@ -1306,6 +1350,14 @@ footer{
   }
 
   .step__description{
+    width: 80%;
+  }
+
+  .values__illustration--wrapper{
+    width: 80%;
+  }
+
+  .values__description{
     width: 80%;
   }
 }
@@ -1357,6 +1409,15 @@ footer{
   .step__description{
     width: 90%;
   }
+
+  .values__illustration--wrapper{
+    width: 90%;
+  }
+
+  .values__description{
+    width: 90%;
+  }
+
 }
 
 @media (max-width: 388px){
@@ -1396,6 +1457,14 @@ footer{
   }
 
   .step__description{
+    width: 100%;
+  }
+
+  .values__illustration--wrapper{
+    width: 100%;
+  }
+
+  .values__description{
     width: 100%;
   }
 }
