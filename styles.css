@@ -112,6 +112,7 @@ NAVIGATOR
   align-items: center;
   margin: 0 auto;
   padding-top: 32px;
+  position: relative;
 }
 
 .nav__logo--wrapper {
@@ -239,7 +240,8 @@ NAVIGATOR
 
 .menu__btn{
   background-color: transparent;
-  right: 36px;
+  position: absolute;
+  right: 2px;
   top: 42px;
   border: none;
   font-size: 24px;
@@ -253,11 +255,13 @@ NAVIGATOR
 
 .menu__btn--close{
   background-color: transparent;
-  position: fixed;
-  top: 25px;
-  right: 23px;
+  position: absolute;
+  top: 42px;
+  right: 4px;
   border: none;
   font-size: 24px;
+  display: none;
+  z-index: 101;
   transition: all 300ms ease;
 }
 
@@ -285,6 +289,10 @@ NAVIGATOR
 
 .menu--open .menu__btn{
   display: none;
+}
+
+.menu--open .menu__btn--close{
+  display: block;
 }
 
 
@@ -473,6 +481,7 @@ FEATURES
   right: 0;
   transform: translate(50%, 30%);
   opacity: 0.25;
+  display: none;
 }
 
 /*
@@ -513,7 +522,7 @@ QUALITY WORK
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(50%, 40%);
+  transform: translate(40%, 40%);
   fill: currentcolor;
   color: rgb(100, 21, 255);
   z-index: -1;
@@ -938,6 +947,7 @@ USERS
 }
 
 .get__started--button{
+  margin-left: auto;
   margin-right: 32px;
   background-color: rgb(245, 101, 101);
   filter: brightness(115%);
@@ -1133,6 +1143,24 @@ footer{
 
 /* media queries */
 
+
+@media (max-width: 1100px){
+
+  .price__column{
+    width: 100%;
+  }
+
+  .users__wrapper{
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .users__content{
+    width: 100%;
+  }
+
+}
+
 @media (max-width: 1040px){
 
   .nav__links{
@@ -1170,14 +1198,6 @@ footer{
 
   .header__img--wrapper{
     padding: 32px;
-  }
-}
-
-
-@media (max-width: 1100px){
-
-  .price__column{
-    width: 100%;
   }
 }
 
@@ -1224,6 +1244,20 @@ footer{
   .value__i,
   .value__ii{
     padding: 0;
+  }
+
+  .users__para{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .users__buttons{
+    width: 100%;
+  }
+
+  .get__started--button{
+    margin-left: 0;
   }
 
 }
@@ -1350,6 +1384,36 @@ footer{
   .pricing__subtitle{
     font-size: 36px;
   }
+
+  .footer__top--section{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__links--column{
+    width: calc(100% / 3);
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__divider{
+    margin-top: 16px;
+  }
+
+  .footer__bottom--section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__logo--wrapper{
+    margin-bottom: 16px;
+  }
+
+  .footer__copyright{
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 576px){
@@ -1380,6 +1444,11 @@ footer{
   .values__description{
     width: 80%;
   }
+
+  .users__wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media (max-width: 528px){
@@ -1400,6 +1469,24 @@ footer{
     width: 100%;
   }
 
+  .users__para{
+    font-size: 26px;
+  }
+
+  .users__buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .get__started--button{
+    margin: 0 0 32px 0;
+    padding: 16px 32px;
+  }
+
+  .contact__us--button{
+    padding: 16px 32px;
+  }
+
 }
 
 @media (max-width: 456px){
@@ -1409,6 +1496,15 @@ footer{
 
   .qualitywork__description{
     width: 95%;
+  }
+
+  .users__para{
+    font-size: 22px;
+  }
+
+  .footer__links--column{
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -1503,5 +1599,16 @@ footer{
 
   .buy__now{
     padding: 16px 32px;
+  }
+
+  .users__para{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 300px){
+  
+  .footer__links--column{
+    width: 100%;
   }
 }
