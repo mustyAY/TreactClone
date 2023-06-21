@@ -399,8 +399,7 @@ header {
   height: 256px;
   width: 256px;
   transform: translateX(-63%);
-  filter: grayscale(1) invert(1);
-  opacity: 0.25;
+  opacity: 0.15;
 }
 
 /*
@@ -522,7 +521,7 @@ QUALITY WORK
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(40%, 40%);
+  transform: translate(40%, 30%);
   fill: currentcolor;
   color: rgb(100, 21, 255);
   z-index: -1;
@@ -601,7 +600,7 @@ STEPS
   width: 25%;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 45%);
+  transform: translate(-50%, 44%);
   fill: currentColor;
   color: rgb(100 21 255);
   opacity: 0.15;
@@ -1413,6 +1412,10 @@ footer{
 
   .footer__copyright{
     margin-bottom: 16px;
+  }
+
+  .footer__media--img-i{
+    margin-left: 0;
   }
 }
 
