@@ -244,13 +244,14 @@ NAVIGATOR
   right: 2px;
   top: 42px;
   border: none;
+  fill: #243e63;
   font-size: 24px;
   display: none;
   transition: all 300ms ease;
 }
 
 .menu__btn:hover {
-  color: rgb(100, 21, 255);
+  fill: rgb(100, 21, 255);
 }
 
 .menu__btn--close {
@@ -261,12 +262,13 @@ NAVIGATOR
   border: none;
   font-size: 24px;
   display: none;
+  fill: #243e63;
   z-index: 101;
   transition: all 300ms ease;
 }
 
 .menu__btn--close:hover {
-  color: rgb(100, 21, 255);
+  fill: rgb(100, 21, 255);
 }
 
 .menu__backdrop {
@@ -1110,12 +1112,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
   background-color: rgb(247, 250, 252);
-  color: rgb(26, 32, 44);
+  height: 32px;
+  width: 32px;
   margin-left: 16px;
-  padding: 16px;
+  padding: 8px;
   border-radius: 50%;
   transition: all 300ms ease;
 }
